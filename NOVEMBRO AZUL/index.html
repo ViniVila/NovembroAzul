@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novembro Azul</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Cabeçalho com Navbar do Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-dark" href="#inicio" style="transition: opacity 0.3s ease;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">Novembro Azul 🩵</a>
+      
+      <!-- Botão para menu mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Itens do menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-dark" href="#inicio" style="transition: color 0.3s ease;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#000'">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#dicas" style="transition: color 0.3s ease;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#000'">Dicas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#sintomas" style="transition: color 0.3s ease;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#000'">Sintomas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#noticias" style="transition: color 0.3s ease;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#000'">Noticias</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção principal -->
+  <section class="py-4 bg-light" id="inicio">
+    <div class="container text-center">
+      <h1 class="display-4 text-primary mb-4">Conscientização pela Saúde do Homem</h1>
+      <p class="lead">Novembro Azul é o mês de conscientização sobre o câncer de próstata e os cuidados com a saúde masculina. Cuide-se, previna-se, e incentive outros a fazerem o mesmo.</p>
+    </div>
+  
+
+  <!-- Carousel com imagens menores -->
+  <div class="container">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="abelha.jpg" class="d-block w-50 mx-auto" alt="Conscientização sobre saúde masculina" style="max-height: 400px; object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="azul.png" class="d-block w-50 mx-auto" alt="Prevenção do câncer de próstata" style="max-height: 400px; object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="jade.png" class="d-block w-50 mx-auto" alt="Campanha Novembro Azul" style="max-height: 400px; object-fit: cover;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <br><br><br><br>
+  
+  <div class="container text-center" id="dicas">
+    <h1 class="display-4 text-primary mb-4">Dicas de preservação</h1>
+  </div>
+
+  <div class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button alert alert-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Dica 1: Exames Regulares
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Faça exames de prevenção regularmente.</strong> Homens a partir dos 45 anos (ou 40 anos se houver histórico familiar) devem realizar exames como o PSA e toque retal anualmente. A detecção precoce aumenta significativamente as chances de cura.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed alert alert-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Dica 2: Alimentação Saudável
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Mantenha uma alimentação balanceada.</strong> Consuma frutas, verduras, legumes e evite alimentos processados. Uma dieta rica em licopeno (presente no tomate), selênio e vitamina E ajuda na prevenção do câncer de próstata.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed alert alert-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Dica 3: Prática de Exercícios
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Pratique atividades físicas regularmente.</strong> Pelo menos 30 minutos de exercícios moderados por dia ajudam a manter o peso ideal, melhoram a circulação sanguínea e fortalecem o sistema imunológico, reduzindo os riscos de diversas doenças.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <hr>
+
+   <div class="container text-center" id="sintomas">
+    <h1 class="display-4 text-primary mb-4">Sintomas!</h1>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-primary mb-4">Principais sintomas do câncer de próstata:</h5>
+            
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-start">
+                <span class="badge bg-primary me-3">1</span>
+                <span>Dificuldade para urinar</span>
+              </li>
+              <li class="list-group-item d-flex align-items-start">
+                <span class="badge bg-primary me-3">2</span>
+                <span>Diminuição do jato de urina</span>
+              </li>
+              <li class="list-group-item d-flex align-items-start">
+                <span class="badge bg-primary me-3">3</span>
+                <span>Necessidade de urinar mais vezes durante o dia ou à noite</span>
+              </li>
+              <li class="list-group-item d-flex align-items-start">
+                <span class="badge bg-primary me-3">4</span>
+                <span>Sangue na urina ou no sêmen</span>
+              </li>
+              <li class="list-group-item d-flex align-items-start">
+                <span class="badge bg-primary me-3">5</span>
+                <span>Dor óssea, especialmente na região das costas</span>
+              </li>
+              <li class="list-group-item d-flex align-items-start">
+                <span class="badge bg-primary me-3">6</span>
+                <span>Dor ao urinar ou ejacular</span>
+              </li>
+              <li class="list-group-item d-flex align-items-start">
+                <span class="badge bg-primary me-3">7</span>
+                <span>Insuficiência renal</span>
+              </li>
+              <li class="list-group-item d-flex align-items-start">
+                <span class="badge bg-primary me-3">8</span>
+                <span>Dores fortes no corpo</span>
+              </li>
+            </ul>
+            
+            <div class="alert alert-info mt-4" role="alert">
+              <strong>Importante:</strong> Na fase inicial, o câncer de próstata pode não apresentar sintomas. 
+              Por isso a importância dos exames preventivos regulares a partir dos 45 anos (ou 40 anos com histórico familiar).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="container text-center" id="noticias">
+    <h1 class="display-4 text-primary mb-4">Noticias</h1>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <img src="combate.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dia Nacional de Combate ao Câncer</h5>
+          <p class="card-text">Dia Nacional de Combate ao Câncer alerta sobre diagnóstico precoce e cuidados preventivos para reduzir mortes pela doença.</p>
+          <a href="#" class="btn btn-primary">LEIA MAIS...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <img src="Meios de prevenção.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SBU e SBOC unem-se em campanha sobre câncer de próstata.</h5>
+          <p class="card-text">A próstata é uma glândula do aparelho reprodutor masculino. Localizada na frente do reto e abaixo da bexiga, tem como...</p>
+          <a href="#" class="btn btn-primary">LEIA MAIS...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <img src="homem-idoso-respirando-com-um-equipamento-especial-no-hospital_23-2149011302.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Doenças cardiovasculares e câncer lideram as causas de morte entre homens.</h5>
+          <p class="card-text">Doenças cardiovasculares e cânceres, como os de próstata e pulmão, são as principais causas de mortalidade masculina no Brasil.</p>
+          <a href="#" class="btn btn-primary">LEIA MAIS...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  
+</section>
+  <!-- Rodapé -->
+  <footer class="bg-white text-dark text-center py-3 mt-5">
+    <p class="mb-0">© 2025 Campanha Novembro Azul | Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
